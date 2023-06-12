@@ -1,5 +1,8 @@
 {
   "name": "@eofre/eg-ui",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/eofre"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "dist/esm/index.js",
@@ -11,6 +14,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eofre/eg-ui.git"
   },
   "keywords": [],
   "author": "Eofre",
