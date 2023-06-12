@@ -26,7 +26,6 @@ module.exports = [
         exclude: ["**/*.stories.tsx"],
       }),
       postcss({
-        extract: "index.css",
         modules: true,
         use: ["sass"],
         minimize: true,

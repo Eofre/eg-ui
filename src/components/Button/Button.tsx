@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from "react";
+import classes from "./Button.module.scss";
 
 export interface IButtonProps {
   theme?: `light` | `dark`;
@@ -13,7 +14,7 @@ export const Button: FC<IButtonProps> = ({
   onClick,
   children,
 }) => {
-  const className: string = `button button-${theme}`;
+  const className: string = `${classes.button} ${classes[`button-${theme}`]}`;
   return (
     <button className={className} onClick={onClick} disabled={isDisabled}>
       {children}

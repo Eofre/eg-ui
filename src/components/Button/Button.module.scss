@@ -1,0 +1,27 @@
+.button {
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 7px 17px;
+    border-radius: 3px;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 0px 0px 20px #00000036
+    }
+}
+
+.button.button-dark {
+    background-color: #121212;
+    color: #fff;
+}
+
+.button.button-light {
+    background-color: #fff;
+    border:solid 1px #000;
+    color:#000
+}
