@@ -1,5 +1,5 @@
 import React from "react";
-import { Story } from "@storybook/react";
+import { Meta, Story } from "@storybook/react";
 import { Button, IButtonProps } from "./Button";
 
 export default {
@@ -9,12 +9,16 @@ export default {
     children: "Content",
     isDisabled: false,
     theme: "dark",
+    size: "small",
   },
-};
+} as Meta<ButtonStoryProps>;
 
-type ButtonProps = Pick<IButtonProps, "children" | "isDisabled" | "theme">;
+type ButtonStoryProps = Pick<
+  IButtonProps,
+  "children" | "isDisabled" | "theme" | "size"
+>;
 
-export const ButtonStoryTemplate: Story<ButtonProps> = ({ ...args }) => (
+export const ButtonStoryTemplate: Story<ButtonStoryProps> = ({ ...args }) => (
   <Button onClick={() => console.log("click")} {...args} />
 );
 

@@ -1,3 +1,5 @@
+@import "../../core/styles/variables.scss";
+
 .button {
     background: transparent;
     color: inherit;
@@ -6,22 +8,39 @@
     font-weight: inherit;
     border: none;
     cursor: pointer;
-    padding: 7px 17px;
     border-radius: 3px;
     transition: all 0.3s;
-
-    &:hover {
-        box-shadow: 0px 0px 20px #00000036
-    }
+    
 }
 
 .button.button-dark {
-    background-color: #121212;
-    color: #fff;
+    background-color: $dark-background-color;
+    color: $dark-text-color;
+    box-shadow: 0px 0px 5px #000000d6;
+
+    &:hover {
+        background-color: $dark-hover-btn-color;
+    }
 }
 
 .button.button-light {
-    background-color: #fff;
-    border:solid 1px #000;
-    color:#000
+    background-color: $light-background-color;
+    color: $light-text-color;
+    box-shadow: 0px 0px 5px #00000042;
+
+    &:hover {
+        background-color: $light-hover-btn-color;
+    }
+}
+
+.button.button-small{
+    padding: 7px 16px;
+}
+
+.button.button-medium{
+    padding: 12px 26px;
+}
+
+.button.button-large{
+    padding: 15px 32px;
 }
