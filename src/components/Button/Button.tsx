@@ -1,6 +1,6 @@
 import React, { ButtonHTMLAttributes, FC, ReactNode } from "react";
 import classes from "./Button.module.scss";
-import { Size, Theme, View } from "./types/types";
+import { Size, Theme, View } from "../../types/types";
 
 export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: Theme;
