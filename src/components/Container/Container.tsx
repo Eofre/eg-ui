@@ -1,8 +1,8 @@
-import React, { FC, ReactNode } from "react";
+import React, { CSSProperties, FC, ReactNode } from "react";
 import classes from "./Container.module.scss";
 
 export interface IContainerProps {
-  maxWidth?: string;
+  maxWidth?: CSSProperties["maxWidth"];
   children: ReactNode;
 }
 
