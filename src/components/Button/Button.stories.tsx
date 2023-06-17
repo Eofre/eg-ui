@@ -7,19 +7,20 @@ export default {
   component: Button,
   args: {
     children: "Content",
-    isDisabled: false,
-    theme: "dark",
+    theme: "gold",
     size: "small",
+    disabled: false,
+    view: "text",
   },
 } as Meta<ButtonStoryProps>;
 
 type ButtonStoryProps = Pick<
   IButtonProps,
-  "children" | "isDisabled" | "theme" | "size"
+  "children" | "theme" | "size" | "disabled" | "view"
 >;
 
 export const ButtonStoryTemplate: Story<ButtonStoryProps> = ({ ...args }) => (
-  <Button onClick={() => console.log("click")} {...args} />
+  <Button {...args} />
 );
 
 ButtonStoryTemplate.storyName = "Button";
