@@ -1,0 +1,1 @@
+export { Title, type ITitleProps } from './Title'
