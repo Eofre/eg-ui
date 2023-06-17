@@ -1,0 +1,1 @@
+export { Wrapper, type IWrapperProps } from './Wrapper'
