@@ -1,5 +1,25 @@
 @import "../../core/styles/variables.scss";
 
 .title {
-    color: $gold-text-color;
+    font-weight: 700;
+
+    &.title-dark {
+        color: $dark-text-color-primary;
+    }
+    &.title-light {
+        color: $light-text-color-primary;
+    }
+    &.title-gold {
+        color: $gold-text-color-secondary;
+    }
+
+    &.title-small {
+        font-size: 21px;
+    }
+    &.title-medium {
+        font-size: 27px;
+    }
+    &.title-large {
+        font-size: 33px;
+    }
 }
